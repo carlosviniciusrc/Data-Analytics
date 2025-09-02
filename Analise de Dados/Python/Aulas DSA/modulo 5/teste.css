@@ -1,0 +1,90 @@
+/* Estilos gerais e reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Otimização da Grade de Notícias --- */
+
+/* 1. Estilos do Container da Grade (Mobile-First) */
+.news-grid {
+    display: grid;
+    /* Por padrão (mobile), temos uma única coluna */
+    grid-template-columns: 1fr;
+    /* Espaçamento entre os artigos */
+    gap: 1.5rem; 
+    
+    /* Limita a largura máxima e centraliza na tela */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* 2. Estilos para Tablet e Desktop */
+/* Quando a tela tiver no mínimo 768px de largura... */
+@media (min-width: 768px) {
+    .news-grid {
+        /* ...mude a grade para três colunas de tamanho igual */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 3. Estilos dos Artigos (para parecerem cartões) */
+.news-article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem com cantos se ajuste ao border-radius */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.news-article h2,
+.news-article p,
+.news-article a {
+    padding: 0 1rem;
+}
+
+.news-article h2 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-article p {
+    flex-grow: 1; /* Faz o parágrafo crescer para alinhar os botões "Leia mais" */
+    line-height: 1.6;
+}
+
+.news-article a {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.news-article a:hover {
+    background-color: #003d82;
+}

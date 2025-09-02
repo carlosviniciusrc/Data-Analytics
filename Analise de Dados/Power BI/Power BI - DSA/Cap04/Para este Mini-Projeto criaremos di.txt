@@ -1,0 +1,30 @@
+Para este Mini-Projeto criaremos diversos relatórios que serão divididos em 4 visões:
+• Visão do Cliente:
+
+- Número de Clientes
+- Média de Salario dos clientes
+- Em qual meio os clientes compraram mais? loja física, loja virtual, compras pelo catalogo, compras com desconto.
+- Grau de escolaridade dos clientes
+- Estado civil
+- Segmentação/filtro por país
+
+• Visão do Comportamento de Compra do Cliente:
+
+- Verificar o salario anual dos clientes com os gastos. Porém, analise bem os dados, pois pode conter outliers.
+- Criando uma nova medida para o total de gastos somando as categorias.
+- SUMX() = soma por linha para fazer o total gasto.
+- OBS: No gráfico de dispersão não pode ser usadas variáveis numéricas discretas e contínuas, apenas continuas.
+Gráficos:
+- Total gasto por salario anual
+- Total gasto por filhos em casa
+- Total gasto por adolescentes em casa
+- Total Gasto Por Grau de Escolaridade e Estado Civil
+
+• Visão da Performance das Campanhas de Marketing:
+- Verificar quantos clientes fizeram compras nas campanhas
+Obs: Sempre verificar o tipo de dados de cada coluno, pois as vezes pode alterar o gráfico. Como por exemplo no gráfico pizza de quem comprou, a coluna comprou foi alterada para texto, pois o 0 e 1 representa sim e não, mas mesmo mudando não alterou o valor do gráfico.
+- Media salarial de quem comprou ou não na campanha.
+- Estabelecer um matriz para ver o total de visitas no site e saber quem comprou.
+- Exibir quem comprou ou não com filhos em casa.
+
+• Visão dos Padrões de Compra no Ponto de Venda (País)

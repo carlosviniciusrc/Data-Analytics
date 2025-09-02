@@ -1,0 +1,4 @@
+Nome,Salario,Cargo
+Ana,4500,Analista
+Bruno,5200,Desenvolvedor
+Carla,6100,Gerente
